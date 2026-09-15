@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roman Tretyak — CV</title>
+  <link rel="icon" href="assets/img/avatar.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="page" id="top">
+    <div class="cv-layout">
+      <aside class="sidebar">
+        <div class="hero">
+          <img class="photo" src="assets/img/avatar.png" alt="Avatar of Roman Tretyak" onerror="this.outerHTML='<div class=\'photo-placeholder\'>RQ</div>'">
+          <h1 class="name">Roman Qkiws</h1>
+          <p class="role">Backend / Software Developer</p>
+          <p class="location">Minsk, Belarus</p>
+        </div>
+
+        <section id="contacts">
+          <h2>Contacts</h2>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:toccata.knot-2n@icloud.com">toccata.knot-2n@icloud.com</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/qkiws" target="_blank" rel="noopener noreferrer">qkiws</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/roman-tretyak" target="_blank" rel="noopener noreferrer">roman-tretyak</a></li>
+            <li><strong>Discord:</strong> syonuch</li>
+          </ul>
+        </section>
+
+        <section id="skills">
+          <h2>Skills</h2>
+          <ul class="skills-list">
+            <li>
+              <strong>Languages:</strong>
+              Python, JavaScript, Lua, Luau
+            </li>
+            <li>
+              <strong>Frameworks &amp; Libraries:</strong>
+              FastAPI, Asyncio, PyTest, Web3.js / Web3.py, Httpx
+            </li>
+            <li>
+              <strong>Databases:</strong>
+              PostgreSQL, SQLite
+            </li>
+            <li>
+              <strong>Tools &amp; Practices:</strong>
+              Git, GitHub, REST APIs, Telegram Bot API, Game Modding
+            </li>
+          </ul>
+        </section>
+
+        <section id="languages">
+          <h2>Languages</h2>
+          <ul>
+            <li><strong>Russian:</strong> Native</li>
+            <li><strong>English:</strong> B1–B2 (Intermediate)</li>
+          </ul>
+        </section>
+      </aside>
+
+      <main class="main-content">
+        <section id="about">
+          <h2>About me</h2>
+          <p>Coding for fun, sometimes for profit. In love with Lua, but will never work on it.</p>
+          <p>Main focus: building backend systems, automated tools, bots, and Web3 integrations. Experience with asynchronous workflows, database architecture, and game logic scripting.</p>
+        </section>
+
+        <section id="projects">
+          <h2>Projects</h2>
+          <ul class="projects-list">
+            <li>
+              <a href="https://github.com/qkiws/CEX-Deposit-checker" target="_blank" rel="noopener noreferrer">CEX Deposit Checker</a>
+              — Telegram bot for tracking and analyzing CEX deposit transactions without a UI
+            </li>
+            <li>
+              <a href="https://github.com/qkiws/DST-mod-tutorial.-Don-t-starve-together" target="_blank" rel="noopener noreferrer">DST Modding Guide</a>
+              — Comprehensive tutorial and code samples for Don't Starve Together Lua modding
+            </li>
+          </ul>
+        </section>
+
+        <section id="code">
+          <h2>Code example</h2>
+          <p>Basic multiplication function in JavaScript:</p>
+          <pre><code>function multiply(a, b) {
+  return a * b;
+}</code></pre>
+        </section>
+
+        <section id="education">
+          <h2>Education</h2>
+          <ul>
+            <li>
+              <strong>Belarusian State University (BSU)</strong><br>
+              Faculty of Radiophysics and Computer Technologies (FoR&amp;CT)<br>
+              Bachelor's degree
+            </li>
+            <li>
+              <strong>Secondary School Education</strong>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <a href="https://github.com/qkiws" target="_blank" rel="noopener noreferrer">GitHub: qkiws</a>
+      <p class="footer-year">2026</p>
+      <a class="footer-course" href="https://rs.school/courses/javascript-preschool-ru" target="_blank" rel="noopener noreferrer">
+        <img class="footer-logo" src="assets/svg/logo.png" alt="RS School logo" onerror="this.replaceWith('RS School')">
+      </a>
+    </footer>
+  </div>
+
+  <a class="to-top" href="#top" aria-label="Back to top">Up ↑</a>
+
+  <script>
+    var toTop = document.querySelector('.to-top');
+    function updateToTop() {
+      if (toTop) {
+        toTop.classList.toggle('is-visible', window.scrollY > 150);
+      }
+    }
+    window.addEventListener('scroll', updateToTop);
+    updateToTop();
+  </script>
+</body>
+
+</html>
